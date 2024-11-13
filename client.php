@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $c = isset($_POST['c']) ? intval($_POST['c']) : 0;
 
     // Create an XML-RPC client
-    $client = new Client('http://localhost:8000');
+    $client = new Client('http://172.26.48.1:8000');
 
     // Prepare parameters for the Penjumlahan function
     $params = [
